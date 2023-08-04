@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 200vh;
+  width: 100%;
+}
+.nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background: transparent;
+  height: 80px;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  z-index: 2;
+  backdrop-filter: blur(20px);
+  /* border-bottom: 0.5px solid black; */
+  position: sticky;
+  top: 0;
+}
+
+.image{
+}
+
+.menu-navbar{
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+/* .menu-navbar li{
+  border-bottom: 1px solid rgb(141, 139, 139);
+} */
+
+.menu-navbar li:first-child{
+  border-bottom: 1px solid rgb(141, 139, 139);
+}
+
+.menu-navbar li a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* opacity: 0; */
+  z-index: 1;
+}
+
+.header .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  gap: 1rem;
+}
+
+.header p{
+  z-index: 1;
+  font-size: 20px;
+}
+
+.header h2{
+  z-index: 1;
+  font-size: 100px;
+}
+
+.header .container{
+  z-index: 2 ;
+  color: solid black;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header .button a{
+  width: 100%;
+  height: 100vh;
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+
+.header .button{
+  
+}
+
+.header .button a:hover{
+opacity: 3;
+  transition: all 0.5S;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+/* .header img{
+  border-radius: 20px;
+  z-index: 1;
+} */
+
+/* .header svg{
+  position: absolute;
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+} */
+
+/* .header .image{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 30%;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  position: relative;
+} */
+
+.header::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+width: 100%;
+height: 100vh;
+background-size: cover;
+  /* opacity: 0.7; */
+background-image: url(image/background-hero-section.jpeg.jpg);
+}
