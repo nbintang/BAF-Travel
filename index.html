@@ -1,78 +1,251 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Project With DaisyUI and Tailwind</title>
+  <link rel="icon" href="image/logo-1 (3).png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    body {
+      font-family: Roboto Condensed;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div class="nav">
-    <div class="image">
-      <a href=""><img src="image/logo.png" alt="" width="160px" style="border-radius: 50px;"></a>
-      
-    </div>
-    <ul class="menu-navbar">
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Destination</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
-  </div>
-  <div class="header">
-    <div class="container">
-      <div class="content">
-        <h2>let's travel!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non earum at tenetur libero eum quaerat?</p>
-      </div>
-      <div class="button">
-        <a href="">Join with us!</a>
+<body class="bg-cover bg-center w-full h-[113vh] bg-slate-950 relative"
+  style="background-image: url(image/background-hero-section.jpeg.jpg);">
+  <div class="navbar p-4 bg-transparent">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost btn-circle h-18 w-24 flex flex-col justify-center items-center">
+          <img class="w-30" src="image/logo-1.png" alt="">
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-950 rounded-box w-52">
+          <li><a>Homepage</a></li>
+          <li><a>Destination</a></li>
+          <li><a>About</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="main">
-    <div class="image-main"> 
-      <img src="image-pemandangan/gambar-1hitam.jpg" alt=""  class="image-1">
-      <img src="image-pemandangan/gambar-2hitam.jpg" alt=""  class="image-2">
-      <img src="image-pemandangan/gambar-3hitam.jpg" alt=""  class="image-3">
-      <img src="image-pemandangan/gambar-4hitam.jpg" alt=""  class="image-4">
+    <div class="navbar-center">
+      <a class="btn btn-ghost normal-case text-xl text-black">THE HIKING EXPERIENCE</a>
     </div>
-    <div class="text-main">
-      <h1>WELCOME TO OUR WEBSITE!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea cumque soluta doloremque distinctio at et?</p>
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <path fill="rgb(69, 68, 68)" d="M67.7,-13.2C75.5,2,61.1,33.2,42.9,42.5C24.8,51.8,2.7,39.1,-17.5,24.4C-37.8,9.6,-56.4,-7.4,-53.2,-16.3C-50,-25.1,-25,-25.9,2.5,-26.7C30,-27.5,59.9,-28.3,67.7,-13.2Z" transform="translate(100 100)" />
-      </svg>
+    <div class="navbar-end">
+      <button class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" style="color: black;" />
+        </svg>
+      </button>
+      <button class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9 "
+              style="color: black;" />
+          </svg>
+          <span class="badge badge-xs badge-primary indicator-item"></span>
+        </div>
+      </button>
     </div>
   </div>
-  <!-- <div class="main">
-    <div class="menu">
-      <div class="card"> <img src="image-pemandangan/gambar-1.jpeg" alt="" width="200px">
-        <p>Lorem ipsum dolor sit amet.</p>
+  <div class="main flex w-full h-[100vh] justify-center items-center">
+    <div class=" flex flex-col justify-center items-center w-69 flex-wrap leading-8">
+      <h1 class="text-main text-9xl text-black colder font-bold">Let's Travel with us!</h1>
+      <p class="text-black font-semi-bold w-[670px] text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Similique tenetur
+        autem doloremque consequatur quaerat veniam sit blanditiis sed expedita fugit?</p>
+      <button class="btn btn-outline text-black rounded-lg">Join Now!</button>
+    </div>
+  </div>
+  <div
+    class="main-2 w-[100%] h-[115vh] flex justify-center items-center flex-wrap p-7 bg-gradient-to-t from-base-200 to-black ">
+    <div class="photo flex justify-center ">
+      <div class="h-96 carousel carousel-vertical  w-[430px] h-[440px] rounded-box">
+        <div class="carousel-item h-full ">
+          <img src="image/gambar-2hitam.jpg" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="image/gambar-1hitam.jpg" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="image/gambar-3hitam.jpg" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="image/gambar-4hitam.jpg" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="image/gambar-8.jpg" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="image/gambar-7.jpg" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="image/gambar-9.jpg" />
+        </div>
       </div>
     </div>
-    <div class="menu">
-      <div class="card"> <img src="image-pemandangan/gambar-2.jpeg" alt="" width="200px">
-        <p>Lorem ipsum dolor, sit amet.</p>
+    <div class="text flex flex-col flex-wrap h-[340px] justify-start p-4">
+      <h1 class="text-7xl ">MORE ADVENTURE</h1>
+      <p class="w-96 flex-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sunt. Labore nobis autem
+        ratione iure et magni praesentium fugit possimus eius culpa, ut a laboriosam similique voluptatum ex expedita
+        nihil.</p>
+      <div class="button flex justify-center p-4 w-[400px]">
+        <a href="#my_modal_8" class="btn">Get Started</a>
+        <div class="modal" id="my_modal_8">
+          <div class="modal-box">
+            <h3 class="font-bold text-lg">We're sorry</h3>
+            <p class="py-4">You have to Login first before entering this event</p>
+            <div class="modal-action">
+             <a href="#" class="btn">Login</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="menu">
-      <div class="card"> <img src="image-pemandangan/gambar-3.jpeg" alt="" width="200px">
-        <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="menu-card flex flex-col items-center w-[100%] gap-5 h-[100vh] justify-center bg-base-200">
+    <div class="container w-[700px] h-[500px] flex flex-col justify-end items-center leading-7 ">
+      <h1 class="text-7xl">Discover more</h1>
+      <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, veniam! Nemo accusantium
+        nobis nostrum animi dolor, alias delectus quaerat minus quod sapiente magni impedit veniam dolore non autem
+        corporis labore aut porro. Incidunt, soluta tempore illum consectetur est ratione aut.</p>
+    </div>
+    <div class="container-1 w-[100%] h-[111vh] items-center flex justify-around flex-wrap gap-5">
+      <div class="card w-96 shadow-xl bg-base-100 w-[200px]">
+        <figure><img src="image/gambar-8.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Fuji Mountain</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">€599.99</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl w-[200px] h-[363px]">
+        <figure><img src="image/gambar-5hitam.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Harder Kulm mountain</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">€499.99</button>
+          </div>
+        </div>
+      </div>
+      <div class="indicator">
+        <span class="indicator-item indicator-top indicator-end badge badge-secondary">New!</span>
+        <div class="card w-96 bg-base-100 shadow-xl w-[260px] h-[380px]">
+          <figure><img src="image/gambar-2hitam.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Alpen mountain</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <div class=" text-3xl">
+                <p>-50%</p>
+              </div>
+              <button class="btn btn-primary">€2̶9̶9̶.9̶9̶/€209.99</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl w-[200px]">
+        <figure><img src="image/gambar-7.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Rainier mountain</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">€399.99</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl w-[200px] h-[360px]">
+        <figure><img src="image/gambar-9.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Rinjani Mountain</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">€299.99</button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="menu">
-      <div class="card">      <img src="image-pemandangan/gambar-4.jpeg" alt="" width="180px">
-        <p>Lorem ipsum dolor sit amet.</p></div>
-    </div>
-    <div class="menu">
-      <div class="card"> <img src="image-pemandangan/gambar-5.jpeg" alt="" width="200px">
-        <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="hero min-h-[110vh] bg-base-200">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <div class="text-center lg:text-left w-[400px]">
+        <h1 class="text-5xl font-bold">Login now!</h1>
+        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+          quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      </div>
+      <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div class="card-body bg-white">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Email</span>
+            </label>
+            <input type="text" placeholder="email" class="input input-bordered bg-white" />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Password</span>
+            </label>
+            <input type="text" placeholder="password" class="input input-bordered bg-white" />
+            <label class="label">
+              <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+            </label>
+          </div>
+          <div class="form-control mt-6">
+            <button class="btn glass border-solid border-2 border-gray">Login</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div> -->
+  </div>
+  <footer class="footer p-10 bg-base-300 text-base-content">
+    <div>
+      <span class="footer-title">Services</span>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </div>
+    <div>
+      <span class="footer-title">Company</span>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </div>
+    <div>
+      <span class="footer-title">Social</span>
+      <div class="grid grid-flow-col gap-4">
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg></a>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
 
 </html>
